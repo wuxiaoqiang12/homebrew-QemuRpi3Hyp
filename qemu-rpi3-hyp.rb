@@ -1,6 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class QemuRpi3Hyp < Formula
   desc "This is patched qemu for booting rpi3 all cpu core to hyp mode"
   homepage "http://www.qemu.org"
@@ -10,9 +7,9 @@ class QemuRpi3Hyp < Formula
   head "https://git.qemu.org/git/qemu.git"
 
   bottle do
-    sha256 "d502a1077e1adf1653a5f6a704a902885bf1db2b2dc8f8f26610d48ca6b1ba16" => :catalina
-    sha256 "880d9ad2657c4db9f12871591028604a106fce0138093ec9d1cbb96038e73da6" => :mojave
-    sha256 "7660efa3ec8a21441ac781229728aa364d3c63160fabd0c147a31c2b9667e448" => :high_sierra
+    sha256 catalina: "d502a1077e1adf1653a5f6a704a902885bf1db2b2dc8f8f26610d48ca6b1ba16"
+    sha256 mojave: "880d9ad2657c4db9f12871591028604a106fce0138093ec9d1cbb96038e73da6"
+    sha256 high_sierra: "7660efa3ec8a21441ac781229728aa364d3c63160fabd0c147a31c2b9667e448"
   end
 
   depends_on "libtool" => :build
